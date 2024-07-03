@@ -11,11 +11,7 @@
     "test": "vitest"
   },
   "dependencies": {
-<<<<<<< HEAD
-    "@south-paw/react-vector-maps": "^3.2.0",
-=======
     "axios": "^1.7.2",
->>>>>>> a6886f76fe9e0b931416c7bf9bb95415f453a175
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.2.1",
