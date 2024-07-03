@@ -1,8 +1,9 @@
+import "./header.scss"
 import { SlUser } from "react-icons/sl";
 
 const Header = () => {
   return (
-    <div>
+    <div className="navbarHome">
         <img src="" alt="logo air 4 life" />
         <nav>
             <ul>
