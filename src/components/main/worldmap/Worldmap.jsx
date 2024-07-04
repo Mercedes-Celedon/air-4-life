@@ -1,4 +1,7 @@
 import React, { useEffect } from 'react';
+import "./worldmap.scss"
+import CardValoration from './CardValoration';
+
 const Worldmap = () => {
   useEffect(() => {
     const loadScript = (url) => {
@@ -31,9 +34,10 @@ const Worldmap = () => {
     window.initMap = initMap;
   }, []);
   return (
-    <div id="valoracion">
-      <div id='map' style={{ height: '380px' }} />
-    </div>
+    <section className="valorations">
+      <CardValoration />
+      <div className="map" id='map'/>
+    </section>
   )
 }
 

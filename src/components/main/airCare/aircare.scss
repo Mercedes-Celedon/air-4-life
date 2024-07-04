@@ -1,6 +1,7 @@
 @use "../../../styles/variables.scss" as v;
 .airCare{
  width: 100%;
+ padding: 3em 0;
     h2{
         font-size: 56px;
         color: v.$blue-color;
@@ -23,7 +24,7 @@
                 color: v.$gray-dark-color;
             }
             h4{
-                font-size: 20px;
+                font-size: 1.2em;
                 margin-bottom: 0;
                 color: v.$orange-color;
             }

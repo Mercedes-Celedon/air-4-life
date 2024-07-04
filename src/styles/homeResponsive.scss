@@ -1,0 +1,81 @@
+@use "../styles/variables.scss" as v;
+
+@media screen and (max-width:800px){
+    .navbarHome{
+        width: 100%;        
+        align-items: center;
+        .logo{
+            width: 60%;
+            img{
+                width: 80%;
+            }
+        }
+        ul{
+            display: none;
+        }
+        a{
+            width: 20%;
+        }
+    }
+    .valorations{
+        width: 95%;
+        .cardValoration{
+            width: 95%;
+        }
+        .map{
+            width: 95%;
+        }
+    }
+    .airCare{        
+        h2{
+            font-size: 2em;
+        }
+        .cardsAirCare{
+            display: flex;
+            flex-wrap: wrap;
+            width: 98%;
+            .singleCard{
+                width: 90%;
+                flex-wrap: wrap;            
+                justify-content: center;
+                .iconCard{
+                    width: 7em;
+                    height: 7em;
+                    margin-right: 20px;
+                    svg{                        
+                    width: 80%;
+                    }
+                }
+                h4{
+                    width: 90%;
+                    height: 20px;
+                    text-align: center;
+                }
+                p{
+                    width: 90%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .noticias{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;           
+        justify-content: center;
+        h2{
+            width: 90%;
+            text-align: center;
+        }
+        .cardsNews{
+            width: 98%;
+            display: flex;
+            flex-wrap: wrap;           
+            justify-content: center;            
+            .singleNew{
+                width: 100%;
+                padding: 10px 30px;
+            }
+        }
+    }
+}

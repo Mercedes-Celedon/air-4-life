@@ -7,7 +7,7 @@ import "./aircare.scss"
 const AirCare = () => {
   return (
     <section id="cuidar-el-aire" className="airCare">
-        <h2>Cuidado del aire</h2>
+        <h2>Como cuidar del aire</h2>
         <div className="cardsAirCare">
         <div className="singleCard">
             <div className="iconCard"><SlEnergy /></div>
@@ -17,7 +17,7 @@ const AirCare = () => {
         <div className="singleCard">
             <div className="iconCard"><SlFire /></div>
             <h4>Evitar Quemar Basura</h4>
-            <p>Description</p>
+            <p>No quemes basura ni restos de poda; esto libera contaminantes peligrosos en la atmósfera.</p>
         </div>
         <div className="singleCard">
             <div className="iconCard"><PiTree /></div>
