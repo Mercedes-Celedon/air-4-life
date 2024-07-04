@@ -8,7 +8,7 @@ const responsive = {
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 2
+      items: 1
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
@@ -41,10 +41,10 @@ const CardValoration = () => {
     ];
   return (
     <div className="cardValoration">
-        <Carousel responsive={responsive} arrows={true}
-  showDots={true}  ssr={true} infinite={true}
+        <Carousel responsive={responsive} arrows={true} ssr={true} infinite={true}
         autoPlay={true}
-        autoPlaySpeed={1000}>
+        autoPlaySpeed={2000}
+        containerClass="carousel-container">
             {valoration.map((data) => (
                 <div>
                     <h2>{data.city}</h2>

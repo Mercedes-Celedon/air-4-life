@@ -1,0 +1,68 @@
+@use "../../styles/variables.scss" as v;
+.noticias{
+    width: 100%;
+    padding: 3em 0;    
+    background-color: rgba($color: #D9D9D9, $alpha: 0.6);
+    h2{
+        font-size: 56px;
+        color: v.$orange-color;
+        text-align: center;
+    }
+    .cardsNews{
+        width: 100%;
+        display: flex;        
+        justify-content: center;
+        gap: 2em;
+        .singleNew{
+            width: 30%;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            justify-content: center;
+            padding: 1.2em;
+            .imgNew{
+                width: 100%;
+                height: 18em;
+                img{
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            p{
+                text-align: justify;
+                color: v.$gray-dark-color;
+            }
+            h4{
+                font-size: 1.2em;
+                margin-bottom: 0;
+                color: v.$gray-dark-color;
+                text-align: center;
+            }
+            button{
+                width: 100%;
+                height: 3em;
+                background-color: v.$blue-color;
+                border: none;
+                border-radius: 10px;
+                color: v.$white-color;
+                font-size: 1.2em;
+                font-weight: 500;
+                a{
+                    text-decoration: none;
+                    font-size: 20px;
+                    color: v.$white-color;
+                }
+                a:hover{
+                    color:v.$gray-dark-color;
+                }
+                a:active{
+                    color: v.$orange-color;
+                }
+                a:visited{
+                    color:v.$white-color;
+                }
+            }
+        }
+    }
+}
