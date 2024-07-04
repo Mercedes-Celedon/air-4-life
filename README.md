@@ -2,10 +2,10 @@
 Air 4 Life es un proyecto dedicado a proporcionar información sobre la calidad del aire y las evaluaciones hechas por usuarios registrados en el sitio.
 
 Tabla de Contenidos
-- [Descripción](#descripcion)
-- [Visualización](#visualizacion)
-- [Tecnologías](#tecnologias)
-- [Instalación y Ejecución](#instalacion-y-ejecucion)
+- [Descripción](#descripción)
+- [Visualización](#visualización)
+- [Tecnologías](#tecnologías)
+- [Instalación y Ejecución](#instalación-y-ejecución)
 - [Contribuidores](contribuidores)
 
 
