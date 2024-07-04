@@ -2,7 +2,7 @@
 
 @media screen and (max-width:800px){
     .navbarHome{
-        width: 98%;        
+        width: 100%;        
         align-items: center;
         .logo{
             width: 60%;
@@ -53,12 +53,13 @@
                 }
                 p{
                     width: 90%;
+                    text-align: center;
                 }
             }
         }
     }
     .noticias{
-        width: 98%;
+        width: 100%;
         display: flex;
         flex-wrap: wrap;           
         justify-content: center;

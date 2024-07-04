@@ -17,7 +17,7 @@ const AirCare = () => {
         <div className="singleCard">
             <div className="iconCard"><SlFire /></div>
             <h4>Evitar Quemar Basura</h4>
-            <p>Description</p>
+            <p>No quemes basura ni restos de poda; esto libera contaminantes peligrosos en la atmósfera.</p>
         </div>
         <div className="singleCard">
             <div className="iconCard"><PiTree /></div>
