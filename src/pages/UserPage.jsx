@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+
 import ModalForm from "../components/userpage/modal/ModalForm";
-import RegisterList from '../components/userpage/registerList/RegisterList';
+//import RegisterList from '../components/userpage/registerList/RegisterList';
 import Header from "../components/header/Header"
 import "./userPage.scss"
 import UseApi from '../services/useApi';
@@ -15,8 +15,8 @@ const UserPage = () => {
 if (!data) {
     return <div>Loading...</div>;
 }
-  /*const [isModalOpen, setIsModalOpen] = useState(false);
-  const [registers, setRegisters] = useState([]);
+ /* const [isModalOpen, setIsModalOpen] = useState(false);
+  //const [registers, setRegisters] = useState([]);
 
   const handleOpenModal = () => {
     setIsModalOpen(true);
@@ -33,12 +33,23 @@ if (!data) {
 
   return (
     <div className="userContainer">
-       <Header/>
-      <button className="btnNewRegister" onClick={handleOpenModal}>Nuevo Registro</button>
-      <div className='registerContainer'>
-      {isModalOpen && <ModalForm onClose={handleCloseModal} onAddRegister={handleAddRegister} />}
-      <div className='registerList'>
-      <RegisterList registers={data} />
+      <Header/>
+      <div className="userSection">
+      <ModalForm/>
+      <div className='listContainer'>
+        <h2>REGISTROS</h2>
+        <ul>
+          {data.map(a => (
+            <li key={a.id}>
+              <h3>{a.id}</h3>
+              <p>Tipo de visitante: {a.vive}</p>
+              <p>Calificación: {a.valoracion} ❤️</p>
+              <p>Comentario: {a.comentario}</p>
+              <h4>Calidad del aire:</h4>
+              <p>{a.calidadAire}</p>
+            </li>
+          ))}
+        </ul>
       </div>
       </div>
     </div>

@@ -3,8 +3,8 @@ import Comment from "../comment/Comment";
 import CitySelector from "../citySelector/CitySelector";
 import Rating from "../rating/Rating";
 import { fetchAirQualityData } from "../../../services/a";
-import "./modalForm.scss"
-
+import "./modalForm.scss";
+import axios from 'axios';
 
 const getAirQualityDescription = (aqi) => {
     if (aqi <= 50) return 'Buena';
@@ -42,15 +42,22 @@ const getAirQualityDescription = (aqi) => {
     const handleSubmit = (e) => {
       e.preventDefault();
       const newRegister = {
-        city: selectedCity,
-        airQuality,
-        dateTime,
-        visitorType,
-        rating,
-        comment
+
+        ciudad: selectedCity,
+        calidadAire: airQuality,
+        vive: visitorType == "Residente",
+        valoracion: rating,
+        comentario: comment
       };
-      onAddRegister(newRegister);
-      onClose();
+      console.log(newRegister);
+      axios
+        .post("http://localhost:8000/comment", newRegister)
+        .then(response => {
+          console.log(response);
+        });
+
+      //onAddRegister(newRegister);
+      //onClose();
     };
   
     return (
@@ -85,7 +92,9 @@ const getAirQualityDescription = (aqi) => {
           </form>
         </div>
         <div>
-        <button className="btnSend" type="submit">Enviar</button>
+        <button onClick={handleSubmit} className="btnSend" type="button">
+          Enviar
+        </button>
         </div>
       </div>
     );
