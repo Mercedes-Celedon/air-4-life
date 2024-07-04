@@ -43,7 +43,7 @@ const CardValoration = () => {
     <div className="cardValoration">
         <Carousel responsive={responsive} arrows={true} ssr={true} infinite={true}
         autoPlay={true}
-        autoPlaySpeed={2000}
+        autoPlaySpeed={4000}
         containerClass="carousel-container">
             {valoration.map((data) => (
                 <div>
