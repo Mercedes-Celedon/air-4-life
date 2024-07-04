@@ -3,18 +3,11 @@ Air 4 Life es un proyecto dedicado a proporcionar información sobre la calidad 
 
 Tabla de Contenidos
 - [Descripción](#descripcion)
-- [Visualización](visualizacion)
-- [Tecnologías](tecnologias)
-- [Instalación y Ejecución](instalacion-y-ejecucion)
-- [Contribuidores
+- [Visualización](#visualizacion)
+- [Tecnologías](#tecnologias)
+- [Instalación y Ejecución](#instalacion-y-ejecucion)
+- [Contribuidores](contribuidores)
 
-- [Description 📝](#description)
-- [Main Features ✨ ](#main-features)
-- [Visuals 📷](#visuals)
-- [Built With 🛠️](#built-with)
-- [Key Features 🔑](#key-features)
-- [Installation and Execution  🚀](#installation-and-execution)
-- [Contributors ✒️](#contributors)
 
 
 ## Descripción
