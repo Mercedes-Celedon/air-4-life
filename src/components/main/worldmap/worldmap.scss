@@ -1,0 +1,36 @@
+@use "../../../styles/variables.scss" as v;
+.valorations{
+    width: 100%;
+    display: flex;
+    height: 400px;
+    .cardValoration{
+        width: 40%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1em 2em;        
+        justify-content: center;        
+        align-content: center;
+        background-color: v.$blue-light-color;
+        .react-multi-carousel-list{
+            width: 100%;
+        }
+        h2{
+            font-size: 2em;
+            color: v.$gray-dark-color;
+            text-align: center;
+            margin-right: 20px;
+            margin-left:20px;
+        }
+        p{
+            text-align: center;            
+            color: v.$gray-dark-color;
+            text-align: center;
+            
+            margin-right: 60px;
+            margin-left:60px;
+        }
+    }
+    .mapWorld{
+        width: 60%;
+    }
+}

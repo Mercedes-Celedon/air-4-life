@@ -1,0 +1,71 @@
+@use "../styles/variables.scss" as v; 
+
+
+.btnNewRegister {
+    background-color: v.$orange-color;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 1.35rem;
+    width: fit-content;
+    padding: 1rem;
+    margin: 1rem;
+    font-weight: bold;
+}
+
+.userContainer {
+    position: relative;
+    width: 100%;
+    padding-bottom: 50px;
+    background-color: transparent;
+    .userSection{
+        width: 100%;
+        display: flex;        
+        justify-content: space-around;
+        .listContainer {
+            display: flex;
+            width: 50%;
+            background-color: #cfe6f3a8;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 2rem;
+            padding: 2rem;
+            h2 {
+            text-align: center;
+            font-size: 1.5rem;
+            color: v.$gray-dark-color
+        }
+    }
+    }
+}
+    .userContainer::before {
+     content: '';
+     background-image: url("images/side-view-woman-nature-with-scarf-wind.png");
+     background-repeat: no-repeat;
+     background-size: cover;
+     top: 0;
+     left: 0;
+     opacity: 0.4;
+     z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    }
+   
+    
+
+.close {
+    width: auto;
+    height: auto;
+    border: none;
+    background-color: #FF9F1C;
+    color: white;
+    font-size: 2rem;
+    line-height: 1;
+    border-radius: .5rem;
+}
+
+.btnLogin {
+    display: none;
+}
