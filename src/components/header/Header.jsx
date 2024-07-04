@@ -1,19 +1,19 @@
 import "./header.scss"
 import { SlUser } from "react-icons/sl";
-
+import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <div className="navbarHome">
-        <img src="" alt="logo air 4 life" />
-        <nav>
-            <ul>
-                <li><a href="#valoracion">Valoración</a></li>                
-                <li><a href="#el-aire-hoy">El aire hoy</a></li>
-                <li><a href="#cuidar-el-aire">Cuidar el Aire</a></li>                
-                <li><a href="#noticias">Noticias</a></li>
-            </ul>
-        </nav>   
-        <a href="#"><button> <SlUser /> Login</button></a> 
+        <div className="logo">
+          <img src="images/logo-air-4-life.png" alt="logo air 4 life" />
+        </div>
+        <ul>
+          <li><a href="#valoracion">Valoración</a></li>                
+          <li><a href="#el-aire-hoy">El aire hoy</a></li>
+          <li><a href="#cuidar-el-aire">Cuidar el Aire</a></li>                
+          <li><a href="#noticias">Noticias</a></li>
+        </ul>
+        <Link to="/"><button> <SlUser /> Login</button></Link> 
     </div>
   )
 }
