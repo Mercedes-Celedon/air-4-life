@@ -3,6 +3,7 @@ import Home from "../pages/Home";
 import UserPage from "../pages/UserPage";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
+import ErrorPage from "../pages/ErrorPage";
 
 export const router = createBrowserRouter([
     {   
