@@ -3,9 +3,19 @@ import ModalForm from "../components/userpage/modal/ModalForm";
 import RegisterList from '../components/userpage/registerList/RegisterList';
 import Header from "../components/header/Header"
 import "./userPage.scss"
+import UseApi from '../services/useApi';
 
 const UserPage = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const resultadoJson = 'http://localhost:8000/comment';
+  const { data, error } = UseApi(resultadoJson);
+  if (error) {
+    return <div>Error: {error}</div>;
+}
+
+if (!data) {
+    return <div>Loading...</div>;
+}
+  /*const [isModalOpen, setIsModalOpen] = useState(false);
   const [registers, setRegisters] = useState([]);
 
   const handleOpenModal = () => {
@@ -19,7 +29,7 @@ const UserPage = () => {
   const handleAddRegister = (newRegister) => {
     setRegisters([...registers, newRegister]);
     handleCloseModal();
-  };
+  };*/
 
   return (
     <div className="userContainer">
@@ -28,7 +38,7 @@ const UserPage = () => {
       <div className='registerContainer'>
       {isModalOpen && <ModalForm onClose={handleCloseModal} onAddRegister={handleAddRegister} />}
       <div className='registerList'>
-      <RegisterList registers={registers} />
+      <RegisterList registers={data} />
       </div>
       </div>
     </div>

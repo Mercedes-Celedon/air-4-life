@@ -1,10 +1,9 @@
-import logo from "../assets/logo.png"
 import "./Login.scss"
 
 const Login = () => {
     return (
         <div className="loginPage">
-            <img src={logo} alt="Logo" />
+            <img src="images/logo-air-4-life.png" alt="Logo" />
             <p>Welcome!</p>
             <form>
                 <input type="text" placeholder="Username" />

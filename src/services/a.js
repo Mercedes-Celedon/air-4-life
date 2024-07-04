@@ -15,3 +15,4 @@ export const fetchAirQualityData = async (city) => {
     throw error;
   }
 };
+
