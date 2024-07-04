@@ -1,5 +1,6 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import UseApi from "../../../services/useApi";
 const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -20,25 +21,16 @@ const responsive = {
     }
   };
 const CardValoration = () => {
-    const valoration=[
-        {
-            city:"Barcelona",
-            valoration:4,
-            message:"Este es un mensaje de valoración de la ciudad random que está elegida. Este es un mensaje de valoración de la ciudad random que está elegida."
-        },{
-            city:"Granada",
-            valoration:5,
-            message:"Este es un mensaje de valoración de la ciudad random que está elegida. Este es un mensaje de valoración de la ciudad random que está elegida."
-        },{
-            city:"Madrid",
-            valoration:5,
-            message:"Este es un mensaje de valoración de la ciudad random que está elegida. Este es un mensaje de valoración de la ciudad random que está elegida."
-        },{
-            city:"Zaragoza",
-            valoration:3,
-            message:"Este es un mensaje de valoración de la ciudad random que está elegida. Este es un mensaje de valoración de la ciudad random que está elegida."
-        },
-    ];
+  const resultadoJson = 'http://localhost:8000/comment';
+  const { data, error } = UseApi(resultadoJson);
+  if (error) {
+    return <div>Error: {error}</div>;
+}
+
+if (!data) {
+    return <div>Loading...</div>;
+}
+    
     let counter = 1;
   return (
     <div className="cardValoration">
@@ -46,10 +38,10 @@ const CardValoration = () => {
         autoPlay={true}
         autoPlaySpeed={4000}
         containerClass="carousel-container">
-            {valoration.map((data) => (
-                <div key={counter++}>
-                    <h2>{data.city}</h2>
-                    <p>{data.message}</p>
+            {data.map((a) => (
+                <div key={a.id}>
+                    <h2>{a.ciudad}</h2>
+                    <p>{a.comentario}</p>
                 </div>))}
         </Carousel>
     </div>

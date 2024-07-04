@@ -5,8 +5,8 @@ import News from "../components/news/News"
 import "../styles/homeResponsive.scss"
 
 const Home = () => {
+  
 
-  console.log(data)
   return (
     <main>
         <Header/>
