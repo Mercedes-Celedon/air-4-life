@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import "./worldmap.scss"
 import CardValoration from './CardValoration';
+
 const Worldmap = () => {
   useEffect(() => {
     const loadScript = (url) => {

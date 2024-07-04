@@ -54,6 +54,10 @@
             color: v.$white-color;
             font-size: 1.2em;
             font-weight: 500;
+            &:hover{
+                background-color: v.$orange-light-color;
+                color: v.$gray-dark-color;
+            }
         }
     }
     
