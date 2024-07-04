@@ -39,6 +39,7 @@ const CardValoration = () => {
             message:"Este es un mensaje de valoración de la ciudad random que está elegida. Este es un mensaje de valoración de la ciudad random que está elegida."
         },
     ];
+    let counter = 1;
   return (
     <div className="cardValoration">
         <Carousel responsive={responsive} arrows={true} ssr={true} infinite={true}
@@ -46,7 +47,7 @@ const CardValoration = () => {
         autoPlaySpeed={4000}
         containerClass="carousel-container">
             {valoration.map((data) => (
-                <div>
+                <div key={counter++}>
                     <h2>{data.city}</h2>
                     <p>{data.message}</p>
                 </div>))}
