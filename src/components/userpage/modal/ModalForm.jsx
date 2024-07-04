@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
-import Comment from "../modal/Comment";
-import CitySelector from "../modal/CitySelector";
-import Rating from "../modal/Rating";
+import Comment from "../comment/Comment";
+import CitySelector from "../citySelector/CitySelector";
+import Rating from "../rating/Rating";
 import { fetchAirQualityData } from "../../../services/a";
+import "./modalForm.scss"
 
 
 const getAirQualityDescription = (aqi) => {
@@ -54,9 +55,11 @@ const getAirQualityDescription = (aqi) => {
   
     return (
       <div className="modal">
+        <div className="btnClose">
+          <button className="close" onClick={onClose}>&times;</button>
+          </div>
         <div className="modalContent">
-          <span className="close" onClick={onClose}>&times;</span>
-          <h2>CALIDAD DEL AIRE</h2>
+          <h2 className="tituloUser">DATOS ACTUALES</h2>
           <form onSubmit={handleSubmit}>
             <CitySelector selectedCity={selectedCity} onCityChange={setSelectedCity} />
             {airQuality !== null && (
@@ -64,23 +67,25 @@ const getAirQualityDescription = (aqi) => {
                 <h3>Calidad del aire en {selectedCity}</h3>
                 <p>AQI: {airQuality}</p>
                 <p>Calidad del aire: {getAirQualityDescription(airQuality)}</p>
-                <p>Fecha y hora de la consulta: {dateTime.toLocaleString()}</p>
+                <p>Fecha y hora: {dateTime.toLocaleString()}</p>
               </div>
             )}
-            <div>
+            <div className="radioGroup">
               <label>
                 <input type="radio" value="visitante" checked={visitorType === 'visitante'} onChange={() => setVisitorType('visitante')} />
                 Visitante
               </label>
-              <label>
+              <label >
                 <input type="radio" value="residente" checked={visitorType === 'residente'} onChange={() => setVisitorType('residente')} />
                 Residente
               </label>
-            </div>
+              </div>
             <Rating rating={rating} onRatingChange={setRating} />
             <Comment comment={comment} onCommentChange={setComment} />
-            <button type="submit">Enviar</button>
           </form>
+        </div>
+        <div>
+        <button className="btnSend" type="submit">Enviar</button>
         </div>
       </div>
     );
