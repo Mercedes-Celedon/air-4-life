@@ -1,36 +1,20 @@
-import React from 'react'
+import logo from "../assets/logo.png";
+import "./Register.scss";
 
 const Register = () => {
-  return (
-    <form onSubmit={handleRegister}>
-    <input
-      type="text"
-      value={username}
-      placeholder="Username"
-      required
-    />
-    <input
-      type="email"
-      value={email}
-      placeholder="Email"
-      required
-    />
-    <input
-      type="password"
-      value={password}
-      placeholder="Password"
-      required
-    />
-      <input
-      type="password"
-      value={password}
-      placeholder="Password"
-      required
-    />
+    return (
+        <div className="registerPage">
+            <img src={logo} alt="Logo"/>
+            <p>Register</p>
+            <form>
+                <input type="text" placeholder="Username" required />
+                <input type="email" placeholder="Email" required />
+                <input type="password" placeholder="Password" required />
+                <input type="password" placeholder="Confirm Password" required />
+                <button type="submit">Sing Up</button>
+            </form>
+        </div>
+    );
+};
 
-    <button type="submit">Register</button>
-  </form>
-  )
-}
-
-export default Register
+export default Register;

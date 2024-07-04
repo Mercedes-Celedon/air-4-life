@@ -1,0 +1,55 @@
+@use "../styles/variables.scss" as v;
+
+.registerPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+
+    p {
+        font-size: 25px;
+    }
+
+    .registerPage img {
+        width: 5rem;
+        height: 3rem;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: v.$blue-color;
+        width: 40%;
+        padding: 2rem;
+        border-radius: 10px;
+        gap: 0.5rem;
+
+        input {
+            margin: 10px 0;
+            padding: 10px;
+            width: 80%;
+            border: 1px solid #ccc;
+            background-color: v.$blue-light-color;
+            border-radius: 25px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-top: 25px;
+            background-color: v.$orange-color;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            width: 50%;
+        }
+
+        button:hover {
+            background-color: v.$orange-light-color;
+        }
+    }
+}
