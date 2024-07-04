@@ -1,0 +1,84 @@
+@use "../../../styles/variables.scss" as v;
+
+.modal {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    height: auto;
+    padding: 2rem;
+    line-height: 2rem;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(121, 187, 224, 0.349);
+    border-radius: 2rem;
+    margin: 2rem;
+    min-width: 460px;
+
+
+.modalContent {
+    width: 100%;
+}
+
+.btnSend {
+
+    background-color: v.$orange-color;
+    color: white;
+    border: none;
+    width: 8rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    
+    
+}
+
+.btnClose {
+    align-self: flex-end;
+}
+
+h3, p{
+    padding: 1rem;
+    gap: 1rem;
+    background-color: v.$blue-color;
+    border-radius: 0.5rem;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    
+
+}
+.tituloUser {
+
+    text-align: center;
+    color: v.$gray-dark-color;
+    margin-top: 0;
+}
+
+.radioGroup {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: v.$gray-dark-color;
+    margin: 2rem auto;
+}
+
+.selectorCity select {
+    font-size: 1.15rem;
+    padding: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.comments {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+}

@@ -13,7 +13,7 @@ const Header = () => {
           <li><a href="#cuidar-el-aire">Cuidar el Aire</a></li>                
           <li><a href="#noticias">Noticias</a></li>
         </ul>
-        <Link to="/"><button> <SlUser /> Login</button></Link> 
+        <Link to="/"><button className="btnLogin"> <SlUser /> Login</button></Link> 
     </div>
   )
 }
