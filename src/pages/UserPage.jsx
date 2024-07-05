@@ -42,7 +42,7 @@ if (!data) {
           {data.map(a => (
             <li key={a.id}>
               <h3>{a.id}</h3>
-              <p>Tipo de visitante: {a.vive}</p>
+              <p>Ciudad: {a.ciudad}</p>
               <p>Calificación: {a.valoracion} ❤️</p>
               <p>Comentario: {a.comentario}</p>
               <h4>Calidad del aire:</h4>
