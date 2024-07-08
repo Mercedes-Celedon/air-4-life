@@ -3,8 +3,8 @@ Air 4 Life es un proyecto dedicado a proporcionar información sobre la calidad 
 
 Tabla de Contenidos
 - [Descripción](#descripción)
-- [Visualización](#visualización)
 - [Tecnologías](#tecnologías)
+- [Requisitos](#Requisitos)
 - [Instalación y Ejecución](#instalación-y-ejecución)
 - [Contribuidores](contribuidores)
 
@@ -12,9 +12,6 @@ Tabla de Contenidos
 
 ## Descripción
 Este repositorio contiene la parte front-end del proyecto "Air 4 Life". Aquí podrás encontrar el código fuente que permite a los usuarios visualizar la calidad del aire y dejar sus valoraciones.
-
-## Visualización
-
 
 ## Tecnologías
 Este proyecto está construido con las siguientes tecnologías:
@@ -24,6 +21,11 @@ Node.js (para pruebas)
 SCSS
 Librerías adicionales para rutas, slider, y Google Maps
 
+## Requisitos
+Para el correcto funcionamiento del sitio necesitas tener:
+- Una clave API del sitio web <a href="https://aqicn.org/api/es/">API programáticas de calidad del aire</a>
+- Una clave API de Google maps
+  
 ## Instalación y Ejecución
 Para configurar y ejecutar este proyecto localmente, sigue estos pasos:
 
@@ -39,7 +41,7 @@ Inicia el servidor de desarrollo:
  --Copiar código
 npm run dev
 
-# Importante: Es necesario que descargues el siguiente repositorio API Repositorio y sigas los pasos de instalación para ejecutar la API.
+Importante: Es necesario que descargues el siguiente repositorio <a href="https://github.com/Hilmar09/ApiCrudAir">API Repositorio </a> y sigas los pasos de instalación para ejecutar la API.
 
 ## Contribuidores
 <a href="https://github.com/CarolBV">Carolina</a>
