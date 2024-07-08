@@ -22,7 +22,7 @@ const Worldmap = () => {
   return (
     <section className="valorations">
       <CardValoration />
-        <APIProvider apiKey={'AIzaSyC67DJAj1LssGxinHomtpIkjpYQnl9feWY'}>
+        <APIProvider apiKey={'MY_KEY_GOOGLE'}>
           <Map 
             defaultCenter={position} 
             mapId={'bf51a910020fa25a'}
